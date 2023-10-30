@@ -8,7 +8,7 @@ export class UsersService implements OnModuleInit {
   private readonly users: User[] = [];
 
   onModuleInit() {
-    for (let i = 0; i < 10; i ++) {
+    for (let i = 0; i < 100; i ++) {
       this.create({ username: randomUUID(), password: randomUUID(), age: 0 })
     }
   }

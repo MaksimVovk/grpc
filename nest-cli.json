@@ -6,18 +6,18 @@
   "compilerOptions": {
     "deleteOutDir": true,
     "webpack": true,
-    "tsConfigPath": "apps/grpc/tsconfig.app.json"
+    "tsConfigPath": "apps/apigetaway/tsconfig.app.json"
   },
   "monorepo": true,
-  "root": "apps/grpc",
+  "root": "apps/apigetaway",
   "projects": {
-    "grpc": {
+    "apigetaway": {
       "type": "application",
-      "root": "apps/grpc",
+      "root": "apps/apigetaway",
       "entryFile": "src/main",
       "sourceRoot": "./",
       "compilerOptions": {
-        "tsConfigPath": "apps/grpc/tsconfig.app.json",
+        "tsConfigPath": "apps/apigetaway/tsconfig.app.json",
         "assets": ["proto/*.proto"],
         "watchAssets": true
       }
